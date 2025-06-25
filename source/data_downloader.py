@@ -30,11 +30,12 @@ def import_yf_financial_data(
 ):
     # Get the Data from Yahoo Finance
     data = yf.download(
-        ticker,  # Stock to import
-        start=start_date,  # First Date
-        end=end_date,  # Last Date
-        interval='1d',  # Daily Basis
-        auto_adjust=True  # Adjusted Prices
+        ticker,                 # Stock to import
+        start=start_date,       # First Date
+        end=end_date,           # Last Date
+        interval='1d',          # Daily Basis
+        auto_adjust=True,       # Adjusted Prices,
+        progress=False          # Not printing
     )
 
     # Flat columns

@@ -34,3 +34,24 @@ def get_api_key(
     api_key = config.get("api_keys", {}).get(provider, "").strip().lower()
 
     return api_key
+
+
+# Get the tickers for each Notebook
+def get_tickers(
+        mod: str,
+        toml_path=r"..\config\tickers.toml"
+) -> list:
+
+    # Set Provider
+    provider = get_data_provider()
+
+    # Open .toml
+    with open(toml_path, "rb") as f:
+        config = tomllib.load(f)
+
+    # Return list of tickers
+    try:
+        return config["module"][mod][provider]["tickers"]
+    except KeyError:
+        print(f"⚠️ Tickers not found for module '{mod}' and provider '{provider}'")
+        return []

@@ -14,7 +14,7 @@ Module 6 - Risk and Performance Attribution
         - Calculating Residual Returns
         - Plotting the Results
 
-    * 6.3 Risk Attribution
+    * 6.3 Menchero Risk Attribution
         Topics:
         - Understanding the Menchero Methodology
         - Calculating an Example

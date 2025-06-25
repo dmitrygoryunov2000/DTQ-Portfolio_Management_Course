@@ -2,7 +2,7 @@ Dan the Quant - Quant Investor Course
 
 Module 1 - Introduction to Financial Theory.
 
-    * 1.1 Introduction: Prices vs Returns
+    * 1.1 Introduction: Prices vs. Returns
         Topics:
         - Why we use returns rather than prices?
         - Importing data from Yahoo Finance

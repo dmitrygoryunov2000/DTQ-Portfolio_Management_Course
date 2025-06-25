@@ -1,0 +1,141 @@
+### TICKERS ###
+
+[metadata]
+author = "Daniel Barrera and Edgar Alcántara"
+description = "Tickers for the Workshop"
+version = "2025.06.21"
+
+#################################################
+## Module 1 - Introduction to Financial Theory ##
+#################################################
+
+### Notebook 1.1 Introduction: Prices vs. Returns ###
+
+[module."1.1".yahoo_finance]
+
+tickers = ["AMZN", "NVDA"]
+
+### Notebook 1.2 Introduction: Benchmark ###
+
+[module."1.2".yahoo_finance]
+
+tickers = ["^GSPC", "^DJI", "^NDX", "IWY"]
+
+### Notebook 1.3 Portfolios: Risk Measurement ###
+
+[module."1.3".yahoo_finance]
+
+tickers = ['SPY', 'IWY', 'SPXL']
+
+
+#################################
+## Module 2 - Portfolio Theory ##
+#################################
+
+### Notebook 2.1 Correlation and Diversification ###
+
+[module."2.1".yahoo_finance]
+
+tickers = ['AMZN', 'MCD', 'WMT']
+
+### Notebook 2.2 Markowitz Efficient Frontier ###
+
+[module."2.2".yahoo_finance]
+
+tickers = ['AAPL', 'AMZN', 'JPM', 'JNJ', 'XOM']
+
+### Notebook 2.3 Capital Allocation Line ###
+
+[module."2.3".yahoo_finance]
+
+tickers = ['AAPL', 'AMZN', 'JPM', 'JNJ', 'XOM']
+
+### Notebook 2.4 Rebalancing Portfolios ###
+
+[module."2.4".yahoo_finance]
+
+tickers = ['AAPL', 'AMZN', 'META', 'MSFT', 'NVDA']
+
+
+#########################################
+## Module 3 - Linear Regression Models ##
+#########################################
+
+### Notebook 3.2 Multiple Linear Regression ###
+
+[module."3.2".yahoo_finance]
+
+tickers = ['AAPL', '^GSPC', 'IWY', 'DX-Y.NYB', '^TNX']
+
+
+###########################################
+## Module 5 - Fama & French Factor Model ##
+###########################################
+
+### Notebook 5.1 Proving Size and Value ###
+
+[module."5.1a".yahoo_finance]
+
+tickers = [
+    "XOM",  # ExxonMobil
+    "CVX",  # Chevron
+    "JPM",  # JPMorgan
+    "BAC",  # Bank of America
+    "WFC",  # Wells Fargo
+    "PFE",  # Pfizer
+    "MRK",  # Merck
+    "VZ",   # Verizon
+    "T",    # AT&T
+    "MMM",  # 3M
+    "C",    # Citigroup
+    "F",    # Ford
+    "GM",   # General Motors
+    "INTC", # Intel
+    "IBM",  # IBM
+    "MO",   # Altria
+    "GILD", # Gilead
+    "PRU",  # Prudential
+    "MET",  # MetLife
+    "DUK",  # Duke Energy
+]
+
+[module."5.1b".yahoo_finance]
+
+tickers = [
+    "TSLA",   # Tesla
+    "NVDA",   # NVIDIA
+    "AAPL",   # Apple
+    "AMZN",   # Amazon
+    "MSFT",   # Microsoft
+    "META",   # Meta
+    "NFLX",   # Netflix
+    "SNOW",   # Snowflake
+    "UBER",   # Uber
+    "RIVN",   # Rivian
+    "PLTR",   # Palantir
+    "SHOP",   # Shopify
+    "CRWD",   # CrowdStrike
+    "ZS",     # Zscaler
+    "PANW",   # Palo Alto
+    "COIN",   # Coinbase
+    "SMCI",   # Supermicro
+    "ABNB",   # Airbnb
+    "ROKU",   # Roku
+]
+
+
+#################################################
+## Module 6 - Risk and Performance Attribution ##
+#################################################
+
+### Notebook 6.1 Brinson-Fachler Model ###
+
+[module."6.1".yahoo_finance]
+
+tickers = ['AAPL', 'AMZN', 'GOOGL', 'META', 'MSFT', 'NVDA', 'TSLA']
+
+### Notebook 6.3 Menchero Risk Attribution ###
+
+[module."6.3".yahoo_finance]
+
+tickers = ['AAPL', 'AMZN', 'GOOG', 'META', 'MSFT', 'NVDA', 'TSLA']
