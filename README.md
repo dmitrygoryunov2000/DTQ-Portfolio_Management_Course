@@ -1,12 +1,12 @@
-# DTQ Portfolio Management Course
+# DTQ Portfolio Construction Workshop
 
-**Portfolio Management Workshop by Daniel Barrera and Edgar Alcántara**
+**Portfolio Construction Workshop by Daniel Barrera and Edgar Alcántara**
 
 ---
 
 ## 📘 Overview
 
-This repository contains all materials for the **DTQ Portfolio Management Workshop**, designed to introduce and develop quantitative techniques in portfolio management.
+This repository contains all materials for the **DTQ Portfolio Construction Workshop**, designed to introduce and develop quantitative techniques in portfolio management.
 
 ---
 

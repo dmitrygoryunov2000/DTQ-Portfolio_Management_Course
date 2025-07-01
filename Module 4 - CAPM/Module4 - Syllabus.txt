@@ -14,7 +14,7 @@ Module 4 - Capital Asset Pricing Model
         Topics:
         - Calculating Beta using WLS
         - The weights function and how to apply it
-        - Weights: Ascending vs Descending
+        - Weights: Ascending vs. Descending
 
     * 4.3 CAMP: Betas for the whole Universe
         Topics:
@@ -22,3 +22,10 @@ Module 4 - Capital Asset Pricing Model
         - Calculating Rolling Betas and Residual Returns
         - Comparing Historical Beta vs Mean Beta (mean of rolling betas)
         - Histogram and Distribution of Betas
+
+    * 4.4 Bet Against Beta
+        Topics:
+        - Create Portfolios High Betas vs. Low Betas
+        - Long high betas short low betas
+        - Z-Score de Betas
+

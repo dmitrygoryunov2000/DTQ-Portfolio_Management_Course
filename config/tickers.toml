@@ -72,55 +72,36 @@ tickers = ['AAPL', '^GSPC', 'IWY', 'DX-Y.NYB', '^TNX']
 ## Module 5 - Fama & French Factor Model ##
 ###########################################
 
-### Notebook 5.1 Proving Size and Value ###
+### Notebook 5.1 Proving Size ###
 
-[module."5.1a".yahoo_finance]
+[module."5.1".yahoo_finance]
 
 tickers = [
-    "XOM",  # ExxonMobil
-    "CVX",  # Chevron
-    "JPM",  # JPMorgan
-    "BAC",  # Bank of America
-    "WFC",  # Wells Fargo
-    "PFE",  # Pfizer
-    "MRK",  # Merck
-    "VZ",   # Verizon
-    "T",    # AT&T
-    "MMM",  # 3M
-    "C",    # Citigroup
-    "F",    # Ford
-    "GM",   # General Motors
-    "INTC", # Intel
-    "IBM",  # IBM
-    "MO",   # Altria
-    "GILD", # Gilead
-    "PRU",  # Prudential
-    "MET",  # MetLife
-    "DUK",  # Duke Energy
+    "VTV",  # LargeCap Value
+    "VOE",  # MidCap Value
+    "VBR",  # Small Cap Value
+    "VV",   # LargeCap Blend
+    "VO",   # MidCap Blend
+    "VB",   # SmallCap Blend
+    "VUG",  # LargeCap Growth
+    "VOT",  # MidCap Blend
+    "VBK"   # SmallCap Blend
 ]
 
-[module."5.1b".yahoo_finance]
+### Notebook 5.2 Proving Value ###
+
+[module."5.2".yahoo_finance]
 
 tickers = [
-    "TSLA",   # Tesla
-    "NVDA",   # NVIDIA
-    "AAPL",   # Apple
-    "AMZN",   # Amazon
-    "MSFT",   # Microsoft
-    "META",   # Meta
-    "NFLX",   # Netflix
-    "SNOW",   # Snowflake
-    "UBER",   # Uber
-    "RIVN",   # Rivian
-    "PLTR",   # Palantir
-    "SHOP",   # Shopify
-    "CRWD",   # CrowdStrike
-    "ZS",     # Zscaler
-    "PANW",   # Palo Alto
-    "COIN",   # Coinbase
-    "SMCI",   # Supermicro
-    "ABNB",   # Airbnb
-    "ROKU",   # Roku
+    "VTV",  # LargeCap Value
+    "VOE",  # MidCap Value
+    "VBR",  # Small Cap Value
+    "VV",   # LargeCap Blend
+    "VO",   # MidCap Blend
+    "VB",   # SmallCap Blend
+    "VUG",  # LargeCap Growth
+    "VOT",  # MidCap Blend
+    "VBK"   # SmallCap Blend
 ]
 
 
@@ -130,9 +111,13 @@ tickers = [
 
 ### Notebook 6.1 Brinson-Fachler Model ###
 
-[module."6.1".yahoo_finance]
+[module."6.1a".yahoo_finance]
 
-tickers = ['AAPL', 'AMZN', 'GOOGL', 'META', 'MSFT', 'NVDA', 'TSLA']
+tickers = ["AAPL", "JNJ", "JPM", "AMZN", "XOM", "UNP", "PLD"]
+
+[module."6.1b".yahoo_finance]
+
+tickers = ["XLK", "XLV", "XLF", "XLY", "XLE", "XLI", "XLRE"]
 
 ### Notebook 6.3 Menchero Risk Attribution ###
 
