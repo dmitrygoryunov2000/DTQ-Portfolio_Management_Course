@@ -13,6 +13,7 @@ This repository contains all materials for the **DTQ Portfolio Construction Work
 ## 📚 Course Modules
 
 ### **Module 1: Introduction to Financial Data and Risk**
+- 1.0 Pending
 - 1.1 Prices vs. Returns  
 - 1.2 Benchmarks  
 - 1.3 Risk Measurement  

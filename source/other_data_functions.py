@@ -58,7 +58,7 @@ def calc_rstr(
         weights = np.ones_like(rstr)
     else:
         weights = len(returns) * np.asmatrix(wexp(len(returns), half_life)).T
-    rstr = np.sum(rstr * weights)
+    rstr = (rstr * weights).sum()
     idx = n_days_nonmiss(returns) < min_obs
     rstr.where(~idx, other=np.nan, inplace=True)
     df = pd.Series(rstr)
