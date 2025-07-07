@@ -1,41 +1,62 @@
-# DTQ-Portfolio_Management_Course
-## Portfolio Management Workshop by Dan the Quant
+# DTQ Portfolio Construction Workshop
 
-### Module 1: Introduction to Financial Data and Risk
-- 1.1 Prices vs Returns (including simple vs log returns)
-- 1.2 Benchmarks and Index Construction
-- 1.3 Moving Averages and Technical Indicators
-- 1.4 Risk Measures (Volatility, Drawdown, VaR)
+**Portfolio Construction Workshop by Daniel Barrera and Edgar Alcántara**
 
-### Module 2: Linear Regression
-- 2.1 Simple Linear Regression
-- 2.2 Multiple Linear Regression
-- 2.3 Constrained Regression
-- 2.4 Weighted and Generalized Least Squares (WLS and GLS)
-- 2.5 Model Diagnostics (residual analysis, multicollinearity, heteroskedasticity)
+---
 
-### Module 3: Portfolio Theory
-- 3.1 Diversification and Correlation
-- 3.2 Markowitz Model and the Efficient Frontier
-- 3.3 Sharpe Ratio and Capital Allocation Line (CAL)
-- 3.4 Black-Litterman Model
-- 3.5 Portfolio Rebalancing and its Benefits
+## 📘 Overview
 
-### Module 4: Capital Asset Pricing Model (CAPM)
-- 4.1 Basic CAPM and Single-Factor Regression
-- 4.2 Time-Varying Weighted CAPM
-- 4.3 Intertemporal CAPM (Merton, 1973)
-- 4.4 Betas for the Entire Stock Universe
-- 4.5 CAPM with Kalman Filters
+This repository contains all materials for the **DTQ Portfolio Construction Workshop**, designed to introduce and develop quantitative techniques in portfolio management.
 
-### Module 5: Hedge Portfolios
-- 5.1 Zero Beta Portfolios
-- 5.2 Zero Beta vs Benchmark Performance
-- 5.3 Currency Neutral Portfolios
-- 5.4 Money Neutral Portfolios
+---
 
-### Module 6: Fama and French Models
-- 6.1 Size and Value Factors
-- 6.2 Calculating SMB and HML Factor Returns
-- 6.3 Three-Factor Model (no rolling regressions)
-- 6.4 Fama-MacBeth Regressions
+## 📚 Course Modules
+
+### **Module 1: Introduction to Financial Data and Risk**
+- 1.0 Pending
+- 1.1 Prices vs. Returns  
+- 1.2 Benchmarks  
+- 1.3 Risk Measurement  
+
+### **Module 2: Portfolio Theory**
+- 2.1 Diversification and Correlation  
+- 2.2 Markowitz Efficient Frontier  
+- 2.3 Capital Allocation Line  
+- 2.4 Rebalancing Portfolios  
+
+### **Module 3: Linear Regression**
+- 3.1 Simple Linear Regression  
+- 3.2 Multiple Linear Regression  
+- 3.3 Model Diagnosis  
+
+### **Module 4: Capital Asset Pricing Model (CAPM)**
+- 4.1 Naive CAPM  
+- 4.2 Time-Weighted CAPM  
+- 4.3 Betas for the Whole Benchmark  
+
+### **Module 5: Fama & French Model**
+- 5.1 Proving Size and Value  
+- 5.2 Fama & French Model Specification  
+- 5.3 Fama-MacBeth Regressions  
+
+### **Module 6: Performance and Risk Attribution**
+- 6.1 Brinson-Fachler Model  
+- 6.2 Factor Models Performance Attribution  
+- 6.3 Menchero Risk Attribution  
+
+---
+
+## 🛠️ Technologies
+
+- Python  
+- Jupyter Notebooks  
+- Pandas, NumPy, Matplotlib, StatsModels  
+- yFinance / FMP / KaxaNuk Data Curator
+
+---
+
+## 📩 Contact
+
+For questions, please reach out to:  
+**Daniel Barrera** – [LinkedIn](https://www.linkedin.com/in/danielrbarrera/)  
+**Edgar Alcántara** – [LinkedIn](https://www.linkedin.com/in/edgarallo0/)
