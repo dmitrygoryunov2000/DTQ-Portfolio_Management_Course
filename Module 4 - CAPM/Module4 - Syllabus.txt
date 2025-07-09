@@ -26,6 +26,5 @@ Module 4 - Capital Asset Pricing Model
     * 4.4 Bet Against Beta
         Topics:
         - Create Portfolios High Betas vs. Low Betas
-        - Long high betas short low betas
-        - Z-Score de Betas
+        - Comparing Different Portfolios
 

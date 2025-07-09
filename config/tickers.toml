@@ -68,6 +68,17 @@ tickers = ['AAPL', 'AMZN', 'META', 'MSFT', 'NVDA']
 tickers = ['AAPL', '^GSPC', 'IWY', 'DX-Y.NYB', '^TNX']
 
 
+############################################
+## Module 4 - Capital Asset Pricing Model ##
+############################################
+
+### Notebook 4.4 Bet Against Beta ###
+
+[module."4.4".yahoo_finance]
+
+tickers = ['QCOM', 'T', 'CSCO', 'PFE', 'TSLA', 'ABT', 'AAPL', 'NKE', 'CVX', 'V']
+
+
 ###########################################
 ## Module 5 - Fama & French Factor Model ##
 ###########################################

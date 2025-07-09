@@ -4,13 +4,23 @@ Module 5 - Fama and French Three-Factor Model
 
     * 5.1 Factor: Size
         Topics:
-        - Creating the Size Portfolios
-        - Comparing Size Portfolios Returns
-        - Creating the Value Portfolios
-        - Comparing the Value Portfolios Returns
+        - Creating the Portfolios based on Size Categories
+        - Comparing Portfolios' Returns
+        - Look-Ahead-Bias
+        - Calculated SMB with ETFs
 
     * 5.2 Factor: Value
+        Topics:
+        - Comparing ETFs' Returns
+        - Calculating HML with ETFs
+
     * 5.3 Factor: Momentum
+        Topics:
+        - Calculating Momentum Premium (ETF vs Benchmark)
+        - Orthogonality
+        - Relative Strength to calculate Momentum
+        - Momentum Portfolios
+        - Approximation of the WML premium
 
     * 5.4 F&F: Fama and French + Carhart Model Specification
         Topics:
@@ -21,11 +31,11 @@ Module 5 - Fama and French Three-Factor Model
 
     * 5.5 F&F: Fama and MacBeth Regression
         Topics:
-        - Calculating the Daily Crossectional Regression
+        - Calculating the Daily Cross-Sectional Regression
         - Obtaining the Factor Returns
         - Comparing Factor Returns with the Primes
         - Testing for Significance of the Primes
 
     * 5.6 Momentum Portfolio
         Topics:
-        - 
+        - Building a Portfolio based on Momentum

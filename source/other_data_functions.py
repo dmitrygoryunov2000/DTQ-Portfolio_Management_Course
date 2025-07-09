@@ -52,12 +52,20 @@ def calc_rstr(
         returns,
         half_life=126,
         min_obs=100,
+        yolo=True,
 ):
-    rstr = np.log(1. + returns)
+    # YOLO: You Only Log Once
+    if not yolo:
+        rstr = np.log(1. + returns)
+    else:
+        rstr = returns
+
+    # Calculate Weights
     if half_life == 0:
         weights = np.ones_like(rstr)
     else:
         weights = len(returns) * np.asmatrix(wexp(len(returns), half_life)).T
+
     rstr = (rstr * weights).sum()
     idx = n_days_nonmiss(returns) < min_obs
     rstr.where(~idx, other=np.nan, inplace=True)
