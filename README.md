@@ -13,7 +13,7 @@ This repository contains all materials for the **DTQ Portfolio Construction Work
 ## 📚 Course Modules
 
 ### **Module 1: Introduction to Financial Data and Risk**
-- 1.0 Pending
+- 1.0 Why we are doing this?
 - 1.1 Prices vs. Returns  
 - 1.2 Benchmarks  
 - 1.3 Risk Measurement  
@@ -32,12 +32,16 @@ This repository contains all materials for the **DTQ Portfolio Construction Work
 ### **Module 4: Capital Asset Pricing Model (CAPM)**
 - 4.1 Naive CAPM  
 - 4.2 Time-Weighted CAPM  
-- 4.3 Betas for the Whole Benchmark  
+- 4.3 Betas for the Whole Benchmark
+- 4.4 Betting Agains Beta Strategies
 
 ### **Module 5: Fama & French Model**
-- 5.1 Proving Size and Value  
-- 5.2 Fama & French Model Specification  
-- 5.3 Fama-MacBeth Regressions  
+- 5.1 Proving Size
+- 5.2 Proving Value
+- 5.3 Proving Momentum
+- 5.4 Fama & French Model Specification  
+- 5.5 Fama-MacBeth Regressions  
+- 5.6 Momentum Strategies
 
 ### **Module 6: Performance and Risk Attribution**
 - 6.1 Brinson-Fachler Model  
