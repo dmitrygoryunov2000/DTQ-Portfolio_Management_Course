@@ -67,6 +67,10 @@ tickers = ['AAPL', 'AMZN', 'META', 'MSFT', 'NVDA']
 
 tickers = ['AAPL', '^GSPC', 'IWY', 'DX-Y.NYB', '^TNX']
 
+[module."3.4".yahoo_finance]
+
+tickers = ['AAPL', 'MSFT', 'WMT']
+
 
 ############################################
 ## Module 4 - Capital Asset Pricing Model ##

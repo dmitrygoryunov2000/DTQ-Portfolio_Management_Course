@@ -22,3 +22,10 @@ Module 1 - Introduction to Financial Theory.
         - Tracking Error
         - Value at Risk 95%
         - Risk-Adjusted Returns
+
+    * 1.4 Portfolios: Universe Selection
+        Topics:
+        - Historical Composition of Benchmark
+        - Studying Data Availability
+        - Building a Mask
+

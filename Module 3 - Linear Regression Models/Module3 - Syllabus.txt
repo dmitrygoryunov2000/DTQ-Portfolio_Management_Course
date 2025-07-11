@@ -26,3 +26,9 @@ Module 3 - Linear Regression Models
         - Normality
         - Autocorrelation
         - Linearity
+
+    * 3.4 OLS: Multivariate Regression
+        Topics:
+        - Calculating Betas for Multiple Dependent Variables
+        - Implementing Rolling Regression
+        - Weights in the Regression

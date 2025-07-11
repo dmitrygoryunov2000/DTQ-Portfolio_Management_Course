@@ -200,6 +200,9 @@ def calculate_analytics(
         df_returns,
         risk_free_rate=0.0
 ):
+    # To calculate in percentage
+    df_returns = df_returns * 100
+
     # Trading Days in one Year
     ann_factor = 252
 

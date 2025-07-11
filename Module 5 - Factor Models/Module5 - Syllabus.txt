@@ -39,3 +39,6 @@ Module 5 - Fama and French Three-Factor Model
     * 5.6 Momentum Portfolio
         Topics:
         - Building a Portfolio based on Momentum
+        - Using CAPM Alphas and Relative Strength
+        - Z-Score and Weights Construction
+        - Comparing Portfolio with WML
