@@ -54,8 +54,15 @@ This repository contains all materials for the **DTQ Portfolio Construction Work
 
 - Python  
 - Jupyter Notebooks  
-- Pandas, NumPy, Matplotlib, StatsModels  
-- yFinance / FMP / KaxaNuk Data Curator
+- Pandas, NumPy, Matplotlib, StatsModels
+
+---
+
+## 📚 Data Sources
+
+- Yahoo Finance [link]
+- FRED [link]
+- Fama & French Website [link]
 
 ---
 

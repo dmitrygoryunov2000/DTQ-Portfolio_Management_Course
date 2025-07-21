@@ -25,11 +25,14 @@ def rolling_portfolio_variance(
         weights,
         window=252
 ):
+    # Set weights as np.array
     weights = np.array(weights)
 
+    # List to store data
     rolling_vars = []
     index = returns_df.index
 
+    # Loop
     for i in range(window - 1, len(returns_df)):
         window_returns = returns_df.iloc[i - window + 1: i + 1]
         cov_matrix = np.cov(window_returns.T)
@@ -153,37 +156,38 @@ def rolling_markowitz_weights(
 
 # Function to get the CAL Optimization Weights
 def cal_weights(
-        rfr,
         expected_returns,
         cov_matrix,
-        desired_returns
+        tangency_returns,
+        desired_returns,
+        risk_free_rate,
 ):
-    # Inputs
-    mu, _, Sigma_inv, _ = _preprocess_mkwz_inputs(expected_returns, cov_matrix)
+    # Calculate Tangents Weights
+    tan_ws = markowitz_weights(
+        expected_returns=expected_returns,
+        cov_matrix=cov_matrix,
+        desired_returns=tangency_returns
+    )
 
-    # Calculate the A component
-    A = mu.T @ Sigma_inv @ mu
+    # Calculate discount factor
+    disfact = (desired_returns - risk_free_rate) / (tangency_returns - risk_free_rate)
 
     # Calculate weights
-    weights = ((desired_returns - rfr) / A) * (Sigma_inv @ mu)
+    cal_ws = tan_ws * disfact
 
-    return weights
+    return cal_ws
 
 
 # Function to get the CAL volatility for a desired level of returns
 def cal_volatility(
         rfr,
-        expected_returns,
-        desired_returns,
-        cov_matrix
+        sharpe_ratio,
+        desired_returns
 ):
-    # Inputs
-    mu, _, Sigma_inv, _ = _preprocess_mkwz_inputs(expected_returns, cov_matrix)
+    # Calculate the volatility
+    sigma = (desired_returns - rfr) / sharpe_ratio
 
-    # Calculate the A component
-    A = mu.T @ Sigma_inv @ mu
-
-    return abs(np.sqrt(1 / A) * (desired_returns - rfr))
+    return sigma
 
 
 # Function to get the CAL returns for a desired level of volatility
@@ -216,7 +220,7 @@ def calculate_analytics(
     sharpe_ratio = (annualized_return - risk_free_rate) / annualized_std
 
     # Max Drawdown
-    cumulative_returns = (1 + df_returns.div(100)).cumprod()
+    cumulative_returns = df_returns.cumsum().apply(np.exp)
     rolling_max = cumulative_returns.cummax()
     drawdown = (cumulative_returns / rolling_max) - 1
     max_drawdown = drawdown.min()
@@ -234,84 +238,3 @@ def calculate_analytics(
     })
 
     return summary_df
-
-
-# Helper: Preprocess inputs
-def _preprocess_zb_inputs(
-        expected_betas,
-        cov_matrix
-):
-    # Process Inputs
-    beta = expected_betas.values.flatten().reshape(-1, 1)
-    Sigma = cov_matrix.values
-    Sigma_inv = np.linalg.inv(Sigma)
-    iota = np.ones_like(beta)
-
-    return beta, Sigma, Sigma_inv, iota
-
-
-# Helper: Compute Zero Beta Portfolio components
-def zb_components(
-        expected_betas,
-        cov_matrix
-):
-    # Get Inputs
-    beta, _, Sigma_inv, iota = _preprocess_zb_inputs(expected_betas, cov_matrix)
-
-    # Calculate components
-    C = np.dot(np.dot(iota.T, Sigma_inv), iota)
-    D = np.dot(np.dot(beta.T, Sigma_inv), beta)
-    E = np.dot(np.dot(beta.T, Sigma_inv), iota)
-    Delta = (D * C - E * E)
-
-    return C, D, E, Delta
-
-
-# Function to get the Zero Beta Optimization Weights
-def zero_beta_weights(
-        expected_betas,
-        cov_matrix,
-):
-    # Inputs
-    beta, _, Sigma_inv, iota = _preprocess_zb_inputs(expected_betas, cov_matrix)
-
-    # Components
-    C, D, E, Delta = zb_components(expected_betas, cov_matrix)
-
-    # Calculate weights
-    beta_weights = ((D / Delta) * (Sigma_inv @ iota)) - ((E / Delta) * (Sigma_inv @ beta))
-
-    return beta_weights.flatten()
-
-
-def rolling_zero_beta_weights(
-        returns,
-        betas,
-        window=252,
-        rebalance_freq=63
-):
-    # Lists
-    weights_list = []
-    dates = []
-
-    for i in range(window, len(returns), rebalance_freq):
-        # Prepare Inputs
-        past_returns = returns.iloc[i - window:i]  # Rolling Window
-        past_betas = betas.iloc[i - window:i]
-        past_excepted_betas = past_betas.mean()
-        past_cov_matrix = past_returns.cov()
-
-        # Calculate Weights
-        w = zero_beta_weights(past_excepted_betas, past_cov_matrix)
-
-        # Save weights and dates
-        weights_list.append(w)
-        dates.append(returns.index[i])
-
-    # Create the DataFrame
-    weights_df = pd.DataFrame(weights_list, index=dates, columns=returns.columns)
-
-    # Expand the DataFrame
-    weights_df = weights_df.reindex(returns.index, method='ffill')
-
-    return weights_df.dropna()

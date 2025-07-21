@@ -3,7 +3,7 @@
 [metadata]
 author = "Daniel Barrera and Edgar Alcántara"
 description = "Tickers for the Workshop"
-version = "2025.06.21"
+version = "2025.07.18"
 
 #################################################
 ## Module 1 - Introduction to Financial Theory ##
@@ -69,18 +69,18 @@ tickers = ['AAPL', '^GSPC', 'IWY', 'DX-Y.NYB', '^TNX']
 
 [module."3.4".yahoo_finance]
 
-tickers = ['AAPL', 'MSFT', 'WMT']
+tickers = ['AAPL', 'MSFT', 'NVDA', 'WMT']
 
 
 ############################################
 ## Module 4 - Capital Asset Pricing Model ##
 ############################################
 
-### Notebook 4.4 Bet Against Beta ###
+### Notebook 4.2 Time-Weighted CAPM ###
 
-[module."4.4".yahoo_finance]
+[module."4.2".yahoo_finance]
 
-tickers = ['QCOM', 'T', 'CSCO', 'PFE', 'TSLA', 'ABT', 'AAPL', 'NKE', 'CVX', 'V']
+tickers = ['AAPL', 'MSFT', 'NVDA']
 
 
 ###########################################
