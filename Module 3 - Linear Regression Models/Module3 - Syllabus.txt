@@ -31,4 +31,3 @@ Module 3 - Linear Regression Models
         Topics:
         - Calculating Betas for Multiple Dependent Variables
         - Implementing Rolling Regression
-        - Weights in the Regression

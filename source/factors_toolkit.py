@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 import statsmodels.api as sm
 from scipy import stats
-from typing import Union
 
 
 # Create the Weights Function
@@ -56,6 +55,34 @@ def FamaFrenchFactors(
     }
 
     return parameters
+
+
+# Compute the Factor Contribution to Returns
+def compute_factor_contributions(
+        factor_returns: pd.DataFrame,
+        betas: pd.DataFrame
+):
+    # Multiply Elements
+    if isinstance(factor_returns, pd.Series):
+        contribution = (factor_returns * betas)
+    elif isinstance(factor_returns, pd.DataFrame):
+        contribution = (factor_returns * betas).sum(axis=1)
+    else:
+        contribution = None
+
+    return contribution
+
+
+# Compute the Residual Returns
+def compute_residual_returns(
+        stock_excess_returns: pd.Series,
+        factor_returns: pd.DataFrame,
+        betas: pd.DataFrame
+):
+    # Multiply Elements
+    contribution = compute_factor_contributions(factor_returns, betas)
+
+    return stock_excess_returns - contribution
 
 
 def newey_west_std(

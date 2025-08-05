@@ -19,13 +19,13 @@ tickers = ["AMZN", "NVDA"]
 
 [module."1.2".yahoo_finance]
 
-tickers = ["^GSPC", "^DJI", "^NDX", "IWY"]
+tickers = ["^GSPC", "^DJI", "^NDX", "IYW"]
 
 ### Notebook 1.3 Portfolios: Risk Measurement ###
 
 [module."1.3".yahoo_finance]
 
-tickers = ['SPY', 'IWY', 'SPXL']
+tickers = ['SPY', 'IYW', 'SPXL']
 
 
 #################################
@@ -65,7 +65,7 @@ tickers = ['AAPL', 'AMZN', 'META', 'MSFT', 'NVDA']
 
 [module."3.2".yahoo_finance]
 
-tickers = ['AAPL', '^GSPC', 'IWY', 'DX-Y.NYB', '^TNX']
+tickers = ['AAPL', '^GSPC', 'IYW', 'DX-Y.NYB', '^TNX']
 
 [module."3.4".yahoo_finance]
 
@@ -87,7 +87,7 @@ tickers = ['AAPL', 'MSFT', 'NVDA']
 ## Module 5 - Fama & French Factor Model ##
 ###########################################
 
-### Notebook 5.1 Proving Size ###
+### Notebook 5.1 Proving Size and Value ###
 
 [module."5.1".yahoo_finance]
 
@@ -102,23 +102,6 @@ tickers = [
     "VOT",  # MidCap Blend
     "VBK"   # SmallCap Blend
 ]
-
-### Notebook 5.2 Proving Value ###
-
-[module."5.2".yahoo_finance]
-
-tickers = [
-    "VTV",  # LargeCap Value
-    "VOE",  # MidCap Value
-    "VBR",  # Small Cap Value
-    "VV",   # LargeCap Blend
-    "VO",   # MidCap Blend
-    "VB",   # SmallCap Blend
-    "VUG",  # LargeCap Growth
-    "VOT",  # MidCap Blend
-    "VBK"   # SmallCap Blend
-]
-
 
 #################################################
 ## Module 6 - Risk and Performance Attribution ##
