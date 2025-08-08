@@ -1,6 +1,15 @@
 Dan the Quant - Quant Investor Course
 
-Module 1 - Introduction to Financial Theory.
+Module 1 - Introduction to Financial Theory
+
+    * 1.0 Why are we doing this?
+        Topics:
+        - How do you evaluate a strategy or a manager?
+        - What is your investment's Beta and what does this say about it?
+        - Is your portfolio just the SPY with leverage?
+        - How can we build a rational portfolio (maximizing the your investment's efficiency)?
+        - Is there a strategy that beats the market: Yes, Momentum!
+
 
     * 1.1 Introduction: Prices vs. Returns
         Topics:
