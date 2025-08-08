@@ -1,4 +1,4 @@
-# DTQ Portfolio Construction Workshop
+# DTQ Portfolio Construction Workshop: A practitioner's review
 
 **Portfolio Construction Workshop by Daniel Barrera and Edgar Alcántara**
 
