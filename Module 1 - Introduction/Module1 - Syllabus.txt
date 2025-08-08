@@ -2,7 +2,7 @@ Dan the Quant - Quant Investor Course
 
 Module 1 - Introduction to Financial Theory
 
-    * 1.0 Why are we doing this?
+    * 1.0 Why a hedge fund practitioner believes that the basic theory is the cornerstone of Investing Science?
         Topics:
         - How do you evaluate a strategy or a manager?
         - What is your investment's Beta and what does this say about it?
