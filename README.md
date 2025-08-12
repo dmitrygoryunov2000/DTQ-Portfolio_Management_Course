@@ -27,7 +27,8 @@ This repository contains all materials for the **DTQ Portfolio Construction Work
 ### **Module 3: Linear Regression**
 - 3.1 Simple Linear Regression  
 - 3.2 Multiple Linear Regression  
-- 3.3 Model Diagnosis  
+- 3.3 Model Diagnosis
+- 3.4 Multivariate Regression
 
 ### **Module 4: Capital Asset Pricing Model (CAPM)**
 - 4.1 Naive CAPM  
@@ -36,16 +37,14 @@ This repository contains all materials for the **DTQ Portfolio Construction Work
 - 4.4 Betting Agains Beta Strategies
 
 ### **Module 5: Fama & French Model**
-- 5.1 Proving Size
-- 5.2 Proving Value
-- 5.3 Proving Momentum
-- 5.4 Fama & French Model Specification  
-- 5.5 Fama-MacBeth Regressions  
-- 5.6 Momentum Strategies
+- 5.1 Proving Size and Value
+- 5.2 Proving Momentum and Momentum Strategies
+- 5.3 Fama & French Model Specification  
+- 5.4 Fama-MacBeth Regressions
 
 ### **Module 6: Performance and Risk Attribution**
 - 6.1 Brinson-Fachler Model  
-- 6.2 Factor Models Performance Attribution  
+- 6.2 Performance Attribution for Factor Models   
 - 6.3 Menchero Risk Attribution  
 
 ---
@@ -60,9 +59,9 @@ This repository contains all materials for the **DTQ Portfolio Construction Work
 
 ## 📚 Data Sources
 
-- Yahoo Finance [link]
-- FRED [link]
-- Fama & French Website [link]
+- Yahoo Finance [link](https://pypi.org/project/yfinance/)
+- FRED API [link](https://fred.stlouisfed.org/)
+- Fama & French Website [link](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html)
 
 ---
 
