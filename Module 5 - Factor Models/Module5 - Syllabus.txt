@@ -1,0 +1,34 @@
+Dan the Quant - Quant Investor Course
+
+Module 5 - Fama and French Three-Factor Model
+
+    * 5.1 Factor: Size and Value
+        Topics:
+        - Using ETFs to approximate premiums
+        - Creating the Portfolios based on Size and Value Categories
+        - Comparing Portfolios' Returns
+        - Calculated SMB with ETFs
+        - Calculating HML with ETFs
+
+    * 5.2 Factor: Momentum
+        Topics:
+        - Calculating Momentum Premium (ETF vs. Benchmark)
+        - Relative Strength to calculate Momentum
+        - Building a Portfolio based on Momentum
+        - Using CAPM Alphas and Relative Strength
+        - Z-Score and Weights Construction
+        - Comparing Portfolio with WML
+
+    * 5.3 F&F: Fama and French + Carhart Model Specification
+        Topics:
+        - Calculating the Model for one stock
+        - Comparing the Betas and the Significance
+        - Calculating the Betas for all the stocks
+        - Checking the Distribution of the Betas
+
+    * 5.4 F&F: Fama and MacBeth Regression
+        Topics:
+        - Calculating the Daily Cross-Sectional Regression
+        - Obtaining the Factor Returns
+        - Comparing Factor Returns with the Primes
+        - Testing for Significance of the Primes

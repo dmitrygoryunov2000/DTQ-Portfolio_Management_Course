@@ -1,0 +1,18 @@
+[metadata]
+author = "Daniel Barrera and Edgar Alcántara"
+description = "Configuration for the Workshop"
+version = "2025.07.18"
+
+[settings]
+
+# Choose the data provider
+# Options: "yahoo_finance"
+provider = "yahoo_finance"
+
+
+[api_keys]
+# Only required if the selected provider needs an API key
+fmp = "your_fmp_api_key_here"
+
+# For the FRED Data, we need an API key
+fred = 'your_fred_api_key_here'

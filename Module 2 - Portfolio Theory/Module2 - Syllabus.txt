@@ -25,7 +25,7 @@ Module 2 - Portfolio Theory
         - Sharpe Ratio
         - Finding the Most Efficient Portfolio
         - Building the Capital Allocation Line
-        - Borrowing vs Lending
+        - Borrowing vs. Lending
         - Summarizing and Comparing Portfolios
 
     * 2.4 PT: Rebalancing Portfolios
@@ -33,4 +33,5 @@ Module 2 - Portfolio Theory
         - Look Ahead Bias
         - Calculating Weights
         - Plotting Weights on Time
-        - Comparing Portfolios depending on rebalancing frequency
+        - Rebalancing Portfolios and Comparison
+        - Limiting Weights for Large Portfolios
