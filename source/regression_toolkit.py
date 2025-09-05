@@ -86,7 +86,7 @@ def rolling_wls_regression(
     dates = trimmed_y_matrix.index
 
     # Calculate weights
-    weights = 252 * wexp(window, window / 2)
+    weights = window * wexp(window, window / 2)
 
     # List to store data
     alphas_list = []
