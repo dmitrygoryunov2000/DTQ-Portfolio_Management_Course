@@ -72,6 +72,10 @@ def rolling_wls_regression(
         x_matrix: pd.DataFrame,
         window: int = 252
 ):
+    # Ensure y_matrix is a DataFrame
+    if isinstance(y_matrix, pd.Series):
+        y_matrix = y_matrix.to_frame(name=y_matrix.name or "y")
+
     # Define lookback
     lookback = window
 
@@ -82,7 +86,7 @@ def rolling_wls_regression(
     dates = trimmed_y_matrix.index
 
     # Calculate weights
-    weights = 252 * wexp(window, window / 2)
+    weights = window * wexp(window, window / 2)
 
     # List to store data
     alphas_list = []
@@ -98,7 +102,7 @@ def rolling_wls_regression(
 
         # Select Valid Stocks (those with enough data)
         valid_stocks = y_window.count()[y_window.count() >= lookback].index
-        if len(valid_stocks) < 2:
+        if len(valid_stocks) < 1:
             continue
 
         # Calculate the components for the optimization
