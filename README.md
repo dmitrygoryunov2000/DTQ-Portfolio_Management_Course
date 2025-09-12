@@ -10,7 +10,21 @@ This repository contains all materials for the **DTQ Portfolio Construction Work
 
 ---
 
-Unlock the secrets of Wall Street's top portfolio managers and transform your investment approach from intuitive guesswork to a disciplined, scientific method. This book bridges the gap between academic theory and practical application, revealing why risk management, diversification, and a rigorous scientific approach are the indispensable cornerstones of successful equity portfolio management. From understanding fundamental concepts like return and risk to navigating the complexities of behavioral biases and leveraging advanced tools like factor models, you'll embark on a journey that begins with the basics and culminates in a sophisticated understanding of how to maximize profits and reduce uncertainty with confidence. Discover how the financial industry has evolved to embrace data-driven decision-making, offering a compelling path for anyone seeking to master the markets and create lasting value.
+Institutional investors like Blackrock, AQR, Citadel invest hundreds of billions of dollars for pension funds, university endowments and many other large financial institutions.
+What do they attribute a large part of their success?
+
+The Scientific Method!
+
+At this level of sofistication managers can't merele speculate or make decision based on the intution of a single person, there's too much at stake and the market is way too capricious to be predictable.
+
+No, top financial investors in the World rely on methods studied with the dedication of a rocketship designer, follow a disciplined approach, test these methods for decades and take advantage of diversification.
+
+They borrow from Economics Nobel Prize research and enhance it with pratitioner's street smarts to profit from the best talent, systems and models known to humanity.
+
+In this course:
+Unlock the secrets of Wall Street's top portfolio managers and transform your investment approach from intuitive guesswork to a disciplined, scientific method. This course bridges the gap between academic theory and practical application, revealing why risk management, diversification, and a rigorous scientific approach are the indispensable cornerstones of successful equity portfolio management. 
+
+From understanding fundamental concepts like return and risk to navigating the complexities of behavioral biases and leveraging advanced tools like factor models, you'll embark on a journey that begins with the basics and culminates in a sophisticated understanding of how to maximize profits and reduce uncertainty with confidence. Discover how the financial industry has evolved to embrace data-driven decision-making, offering a compelling path for anyone seeking to master the markets and create lasting value.
 
 ## 📚 Course Modules
 
