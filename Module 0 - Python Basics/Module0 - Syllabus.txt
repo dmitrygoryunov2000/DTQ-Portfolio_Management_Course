@@ -2,7 +2,7 @@ Dan the Quant - Quant Investor Course
 
 Module 1 - Python Basics
 
-    * 0.1 Basics: Lists, Dictionaries and DataFraes
+    * 0.1test Basics: Lists, Dictionaries and DataFraes
         Topics:
         - Lists
         - Dictionaries
